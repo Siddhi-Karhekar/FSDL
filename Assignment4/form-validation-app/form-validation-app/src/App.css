@@ -1,0 +1,103 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --boho-cream: #FDF6F0;
+  --boho-pink: #E8A0BF;
+  --boho-sage: #C1D0B5;
+  --error-red: #ff7675;
+  --success-green: #55efc4;
+  --text-dark: #4A4A4A;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--boho-cream);
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-container {
+  background: white;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 30px; /* High rounded corners for boho look */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+h2 {
+  color: var(--text-dark);
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid #f1f1f1;
+  border-radius: 15px; /* Rounded inputs */
+  background-color: #fafafa;
+  font-family: inherit;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--boho-pink);
+  background-color: white;
+  box-shadow: 0 0 10px rgba(232, 160, 191, 0.2);
+}
+
+.error {
+  color: var(--error-red);
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+  margin-left: 10px;
+}
+
+.success {
+  background-color: var(--success-green);
+  color: #2d3436;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--boho-pink);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #d18ba8;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}

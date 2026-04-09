@@ -1,0 +1,86 @@
+:root {
+  --bg-color: #FDF6F0;
+  --primary-pink: #E8A0BF;
+  --secondary-blue: #B9D7EA;
+  --dark-text: #4A4A4A;
+}
+
+.calc-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.calculator {
+  width: 320px;
+  background: white;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.display {
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+  font-size: 28px;
+  color: var(--dark-text);
+  min-height: 40px;
+  overflow: hidden;
+}
+
+.display span {
+  font-size: 14px;
+  color: #aaa;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+.operators {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.operators button {
+  background-color: var(--secondary-blue);
+  color: var(--dark-text);
+  padding: 15px;
+}
+
+.digits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.digits button {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.digits button:hover, .operators button:hover {
+  background-color: #e0e0e0;
+}
+
+button.equal {
+  background-color: var(--primary-pink);
+  color: white;
+  grid-column: span 2;
+}

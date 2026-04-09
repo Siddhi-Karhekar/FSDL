@@ -1,0 +1,98 @@
+/* Color Variables */
+:root {
+    --bg-color: #FDF6F0;    /* Soft Cream */
+    --accent-1: #E8A0BF;   /* Pastel Pink */
+    --accent-2: #B9D7EA;   /* Pastel Blue */
+    --text-color: #4A4A4A; /* Soft Charcoal */
+    --card-bg: #FFFFFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Rounded Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: var(--card-bg);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Rounded Corners & Boho Aesthetic */
+.hero, section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--accent-1);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px; /* Fully rounded */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(232, 160, 191, 0.4);
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: var(--accent-2);
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners as requested */
+    font-weight: 500;
+}
+
+/* Project Cards */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.project-card {
+    background: var(--card-bg);
+    padding: 30px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Rounded inputs */
+    outline: none;
+}
